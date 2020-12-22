@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/navigation_graph"
+    app:startDestination="@id/missedAttendanceListFragment">
+
+    <fragment
+        android:id="@+id/missedAttendanceListFragment"
+        android:name="com.itb.gestitb.Fragments.MissedAttendanceListFragment"
+        android:label="MissedAttendanceListFragment"
+        app:startDestination="@id/action_missedAttendanceListFragment_to_missedAttendanceFragment">
+        <action
+            android:id="@+id/action_missedAttendanceListFragment_to_missedAttendanceFragment"
+            app:destination="@id/missedAttendanceFragment" >
+            <argument
+                android:name="missedAttendence"
+                app:argType="com.itb.gestitb.Models.StudentMissingModel"
+                />
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/missedAttendanceFragment"
+        android:name="com.itb.gestitb.Fragments.MissedAttendanceFragment"
+        android:label="MissedAttendanceFragment" >
+        <action
+            android:id="@+id/action_missedAttendanceFragment_to_missedAttendanceListFragment"
+            app:destination="@id/missedAttendanceListFragment" />
+    </fragment>
+</navigation>

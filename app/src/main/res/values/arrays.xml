@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="subjects">
+        <item>M06-Accés a dades</item>
+        <item>M07-Desenvolupament d’interfícies</item>
+        <item>M08-Programació multimèdia i dispositius mòbils</item>
+        <item>M09-Programació de serveis i processos</item>
+        <item>M14-Formació en el centre de treball</item>
+        <item>M15-Game design</item>
+        <item>M16-Disseny 2D i 3D</item>
+        <item>M17-Programació de videojocs 2D i 3D </item>
+    </string-array>
+</resources>
